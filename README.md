@@ -43,10 +43,8 @@ Improvements and fixes to the application are also welcome.
 
 #### Using providers with SvelteKit support
 
-1. Deploy the application using the provider of your preference with SvelteKit support.
-2. Provide required environment variables based on the `.env.example` file.
+- Deploy the application using the provider of your preference with SvelteKit support.
 
 #### Self-hosting
 
-1. Set up required environment variables based on the `.env.example` file.
-2. Follow the SvelteKit's [node server deployment documentation](https://kit.svelte.dev/docs/adapter-node).
+- Follow the SvelteKit's [node server deployment documentation](https://kit.svelte.dev/docs/adapter-node).
