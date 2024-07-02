@@ -1,0 +1,113 @@
+$font-family-01: 'Inter';
+
+$font-family-01-variable: 'InterVariable';
+
+:root {
+	--font-family-01: #{$font-family-01}, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-feature-settings:
+		'liga' 1,
+		'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+	:root {
+		--font-family-01: #{$font-family-01-variable}, sans-serif;
+	}
+}
+
+@font-face {
+	font-family: $font-family-01-variable;
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: $font-family-01-variable;
+	font-style: italic;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable-Italic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-Thin.woff2') format('woff2'),
+		url('/fonts/Inter-Thin.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-UltraLight.woff2') format('woff2'),
+		url('/fonts/Inter-UltraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-Light.woff2') format('woff2'),
+		url('/fonts/Inter-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-Regular.woff2') format('woff2'),
+		url('/fonts/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-Medium.woff2') format('woff2'),
+		url('/fonts/Inter-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-SemiBold.woff2') format('woff2'),
+		url('/fonts/Inter-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-Bold.woff2') format('woff2'),
+		url('/fonts/Inter-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family-01;
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url('/fonts/Inter-Black.woff2') format('woff2'),
+		url('/fonts/Inter-Black.woff') format('woff');
+}

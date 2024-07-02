@@ -1,0 +1,32 @@
+@use './colors.scss' as *;
+@use './fonts.scss' as *;
+
+:root {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-family-01);
+	font-size: var(--typography-size-02);
+	font-weight: 300;
+	line-height: var(--typography-line-01);
+	color: var(--color-foreground-01);
+	background-color: var(--color-background-01);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+
+	a {
+		text-decoration: none;
+	}
+
+	::selection {
+		background: var(--color-gray-03);
+	}
+}
