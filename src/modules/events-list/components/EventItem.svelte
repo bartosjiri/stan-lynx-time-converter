@@ -65,6 +65,7 @@
 					<Avatar src="/assets/images/stan-promise.png" />
 				</div>
 				<div class:timing={true}>
+					<DeltaLabel datetimes={[event.promisedAt, dayjs().toISOString()]} />
 					<span>(to be delivered)</span>
 				</div>
 			</div>
@@ -108,7 +109,7 @@
 			display: grid;
 			grid-template-columns: 1fr auto 1fr;
 			align-items: center;
-			column-gap: 3.2rem;
+			column-gap: 1.6rem;
 
 			@include breakpoint($breakpoint-mobile) {
 				grid-template-columns: 1fr;
@@ -168,7 +169,7 @@
 				:global(svg) {
 					height: 4.8rem;
 					width: auto;
-					color: var(--color-gray-04);
+					color: var(--color-gray-06);
 				}
 			}
 

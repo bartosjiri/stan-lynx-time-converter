@@ -13,15 +13,18 @@
 			</div>
 			<div class:content={true}>
 				<p>
-					The&nbsp;application offers an&nbsp;approximate conversion from Stan Lynx time
-					to&nbsp;actual&nbsp;time, utilizing historical&nbsp;data.<br /> This&nbsp;calculation relies
-					on&nbsp;the&nbsp;variances between the&nbsp;announcement and&nbsp;promised delivery times (in&nbsp;Stan
-					Lynx time) and&nbsp;the&nbsp;corresponding actual delivery&nbsp;times.
+					The&nbsp;application provides an&nbsp;approximate conversion from Stan Lynx time
+					to&nbsp;actual&nbsp;time, using historical&nbsp;data.<br />This&nbsp;calculation is based
+					on the&nbsp;differences between announced and&nbsp;promised delivery times (in&nbsp;Stan
+					Lynx&nbsp;time) compared to&nbsp;the&nbsp;corresponding actual delivery&nbsp;times.
 				</p>
 				<p>
 					The&nbsp;project data is&nbsp;<a href={LINK_GITHUB_REPO} target="_blank">open source</a>,
-					and&nbsp;contributions are greatly&nbsp;appreciated.<br /> By&nbsp;maintaining a&nbsp;larger
-					sample&nbsp;size, we&nbsp;can achieve more accurate&nbsp;estimations.
+					and&nbsp;contributions are greatly&nbsp;appreciated.<br />By&nbsp;maintaining
+					a&nbsp;larger sample&nbsp;size, we&nbsp;can achieve more accurate&nbsp;estimates.
+				</p>
+				<p>
+					<img src="/assets/images/seal-of-approval.png" alt="Stan's seal of approval" />
 				</p>
 			</div>
 		</div>
@@ -73,6 +76,13 @@
 				a {
 					color: var(--color-foreground-01);
 					text-decoration: underline;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+					max-width: 48rem;
+					margin: 0 auto;
 				}
 			}
 		}

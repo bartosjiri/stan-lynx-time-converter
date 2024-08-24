@@ -80,6 +80,7 @@
 		transition-duration: var(--transition-duration-01);
 		transition-timing-function: var(--transition-function-01);
 		cursor: pointer;
+		box-sizing: border-box;
 		box-shadow: none;
 		outline: none;
 

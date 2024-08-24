@@ -121,7 +121,7 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr auto 1fr;
 			align-items: center;
-			column-gap: 3.2rem;
+			column-gap: 1.6rem;
 			padding: 1.6rem;
 			background: var(--color-background-02);
 			border: 1px solid var(--color-gray-04);
@@ -145,7 +145,7 @@
 				:global(svg) {
 					height: 4.8rem;
 					width: auto;
-					color: var(--color-gray-07);
+					color: var(--color-gray-06);
 				}
 			}
 

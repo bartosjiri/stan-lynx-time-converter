@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import ChatCircleText from 'phosphor-svelte/lib/ChatCircleText';
+	import ArrowDown from 'phosphor-svelte/lib/ArrowDown';
 	import ArrowSquareOut from 'phosphor-svelte/lib/ArrowSquareOut';
 
 	import { Wrapper, LINK_GITHUB_REPO } from '$lib/layout';
@@ -9,7 +10,7 @@
 
 	import { events } from '$modules/time-converter';
 
-	const INITIAL_COUNT = 3;
+	const INITIAL_COUNT = 5;
 
 	let isExpanded = false;
 </script>
@@ -34,8 +35,8 @@
 				{/if}
 			</div>
 			<div class:actions={true}>
-				{#if !isExpanded}
-					<Button on:click={() => (isExpanded = true)}>Show all events</Button>
+				{#if !isExpanded && $events.length > INITIAL_COUNT}
+					<Button on:click={() => (isExpanded = true)} icon={ArrowDown}>Show all events</Button>
 				{/if}
 				<Button href={LINK_GITHUB_REPO} target="_blank" icon={ArrowSquareOut}>Add new event</Button>
 			</div>

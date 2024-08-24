@@ -2,7 +2,6 @@
   <a href="https://stan-lynx-time-converter.vercel.app" target="_blank"><img height="256" src="static/assets/images/header-logo.png" alt="Stan Lynx Time Converter logo" /></a>
 </p>
 <h1 align="center">Stan Lynx Time Converter</h1>
-<hr/>
 
 An approximate conversion from Stan Lynx time to actual time, utilizing historical data.
 The calculation relies on the variances between the announcement and promised delivery times (in Stan Lynx time) and the corresponding actual delivery times.
@@ -18,7 +17,7 @@ You can contribute data to improve approximate calculations by opening a PR to a
 - `deliveredAt`: Date and time of the actual event delivery _(may be omitted if the event has not yet occurred, but tracking is desired)_.
 - `deliveryReferences`: Links referencing the actual event delivery.
 
-For Stan's announcement, ensure Paris local time is used unless otherwise specified. Times in the config file are in UTC+0.
+For Stan's announcement, ensure Paris local time is used unless otherwise specified. Times in the config file are in UTC+0. Provide optimistic promise times - e.g. for "next week" use the last day and second of the given week (`202X-XX-XXT23:59:59.999Z`).
 
 Improvements and fixes to the application are also welcome.
 
