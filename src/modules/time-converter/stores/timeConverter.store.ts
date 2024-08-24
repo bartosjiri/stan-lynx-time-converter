@@ -18,11 +18,9 @@ export const deltaMultiplier = derived(events, ($events) => {
 	let totalCount = 0;
 
 	for (const event of $events) {
-		if (!event.deliveredAt) continue;
-
 		const announcedAt = dayjs(event.announcedAt);
 		const promisedAt = dayjs(event.promisedAt);
-		const deliveredAt = dayjs(event.deliveredAt);
+		const deliveredAt = event.deliveredAt ? dayjs(event.deliveredAt) : dayjs();
 
 		const announcedToPromisedDuration = promisedAt.diff(announcedAt);
 		const announcedToDeliveredDuration = deliveredAt.diff(announcedAt);
