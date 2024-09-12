@@ -16,7 +16,7 @@
 	let isAnnouncementPickerOpen = false;
 
 	let promisedDatetimePickerRef: HTMLDivElement;
-	let promisedDatetime = dayjs().add(1, 'hours').toDate();
+	let promisedDatetime = dayjs().add(1, 'days').toDate();
 	let isPromisedPickerOpen = false;
 
 	// $: if (dayjs(promisedDatetime).isBefore(dayjs(announcementDatetime))) {
@@ -169,6 +169,9 @@
 						:global(.input input) {
 							font-size: var(--typography-size-04);
 							font-weight: 500;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							overflow: hidden;
 						}
 					}
 

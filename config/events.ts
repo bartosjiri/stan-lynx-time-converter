@@ -13,7 +13,13 @@ export const EVENTS: EventT[] = [
 			}
 		],
 		promisedAt: '2024-08-11T21:59:59.999Z',
-		deliveredAt: null
+		deliveredAt: '2024-09-09T16:00:00.000Z',
+		deliveryReferences: [
+			{
+				name: 'Youtube stream',
+				url: 'https://www.youtube.com/watch?v=h8IofvhT9Fs'
+			}
+		]
 	},
 	{
 		name: '"Later today" (update July 2024)',

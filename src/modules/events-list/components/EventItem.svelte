@@ -136,6 +136,7 @@
 					span {
 						font-size: var(--typography-size-04);
 						font-weight: 500;
+						white-space: nowrap;
 
 						&.empty {
 							color: var(--color-gray-05);
