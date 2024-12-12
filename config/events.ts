@@ -12,8 +12,14 @@ export const EVENTS: EventT[] = [
 				url: 'https://x.com/stanlarroque/status/1866902109548876158'
 			}
 		],
-		promisedAt: '2024-12-12T22:59:59.999Z',
-		deliveredAt: null
+		promisedAt: '2024-12-12T16:00:00.000Z',
+		deliveredAt: '2024-12-12T16:00:00.000Z',
+		deliveryReferences: [
+			{
+				name: 'News post',
+				url: 'https://www.uploadvr.com/sony-lynx-xreal-android-xr-devices/'
+			}
+		]
 	},
 	{
 		name: '"This or next week" (livestream August 2024)',
