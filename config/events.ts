@@ -4,6 +4,18 @@ import type { EventT } from '../src/modules/time-converter';
 
 export const EVENTS: EventT[] = [
 	{
+		name: '"January" (refunds processing)',
+		announcedAt: '2024-12-20T17:00:00.000Z',
+		announcementReferences: [
+			{
+				name: 'Kickstarter update',
+				url: 'https://www.kickstarter.com/projects/stanlarroque/lynx/posts/4279042'
+			}
+		],
+		promisedAt: '2025-01-31T22:59:59.999Z',
+		deliveredAt: null
+	},
+	{
 		name: '"Tomorrow" (announcement December 2024)',
 		announcedAt: '2024-12-11T17:45:00.000Z',
 		announcementReferences: [
