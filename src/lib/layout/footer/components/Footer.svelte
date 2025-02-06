@@ -29,8 +29,8 @@
 
 <style lang="scss">
 	footer {
-		margin-top: 6.4rem;
-		margin-bottom: 6.4rem;
+		padding-top: 6.4rem;
+		padding-bottom: 6.4rem;
 
 		.container {
 			display: flex;
