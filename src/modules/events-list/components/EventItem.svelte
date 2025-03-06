@@ -6,6 +6,7 @@
 	import DeltaLabel from './DeltaLabel.svelte';
 
 	import { dayjs, DATETIME_FORMAT } from '$util/dayjs';
+	import { calculateStanLynxTime } from '$modules/time-converter';
 
 	import type { EventT } from '$modules/time-converter';
 
@@ -67,6 +68,14 @@
 				<div class:timing={true}>
 					<DeltaLabel datetimes={[event.promisedAt, dayjs().toISOString()]} />
 					<span>(to be delivered)</span>
+				</div>
+				<div class:estimate={true}>
+					<span>
+						Estimated:
+						{dayjs(calculateStanLynxTime(dayjs(event.announcedAt), dayjs(event.promisedAt))).format(
+							DATETIME_FORMAT
+						)}
+					</span>
 				</div>
 			</div>
 		{/if}
@@ -193,7 +202,8 @@
 
 			.promise {
 				grid-template-columns: 1fr auto;
-				grid-template-areas: 'timing avatar';
+				grid-template-rows: auto auto;
+				grid-template-areas: 'timing avatar' 'estimate avatar';
 
 				.timing {
 					justify-content: flex-end;
@@ -208,6 +218,18 @@
 				.avatar {
 					:global(img) {
 						filter: grayscale(100%) contrast(0.66);
+					}
+				}
+
+				.estimate {
+					grid-area: estimate;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+
+					span {
+						color: var(--color-gray-05);
+						font-weight: 400;
 					}
 				}
 			}
