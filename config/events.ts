@@ -4,6 +4,18 @@ import type { EventT } from '../src/modules/time-converter';
 
 export const EVENTS: EventT[] = [
 	{
+		name: '"Next week" (status update)',
+		announcedAt: '2025-05-30T12:42:00.000Z',
+		announcementReferences: [
+			{
+				name: 'Tweet',
+				url: 'https://x.com/stanlarroque/status/1928431787648143751'
+			}
+		],
+		promisedAt: '2025-06-08T21:59:59.999Z',
+		deliveredAt: null
+	},
+	{
 		name: '"January" (refunds processing)',
 		announcedAt: '2024-12-20T17:00:00.000Z',
 		announcementReferences: [
