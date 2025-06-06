@@ -12,8 +12,14 @@ export const EVENTS: EventT[] = [
 				url: 'https://x.com/stanlarroque/status/1928431787648143751'
 			}
 		],
-		promisedAt: '2025-06-08T21:59:59.999Z',
-		deliveredAt: null
+		promisedAt: '2025-06-06T16:00:00.000Z',
+		deliveredAt: '2025-06-06T16:00:00.000Z',
+		deliveryReferences: [
+			{
+				name: 'Youtube stream',
+				url: 'https://www.youtube.com/live/AS_YtjNd_EQ'
+			}
+		]
 	},
 	{
 		name: '"January" (refunds processing)',
