@@ -4,6 +4,28 @@ import type { EventT } from '../src/modules/time-converter';
 
 export const EVENTS: EventT[] = [
 	{
+		name: '"This summer" (Lynx R2 release)',
+		announcedAt: '2026-01-21T19:15:00.000Z',
+		announcementReferences: [
+			{
+				name: 'Tweet',
+				url: 'https://x.com/stanlarroque/status/2014054334799938027'
+			}
+		],
+		promisedAt: '2026-08-31T21:59:59.999Z'
+	},
+	{
+		name: 'Lynx R2 reveal livestream',
+		announcedAt: '2025-11-14T16:56:00.000Z',
+		announcementReferences: [
+			{
+				name: 'Tweet',
+				url: 'https://x.com/stanlarroque/status/1989377014168526874'
+			}
+		],
+		promisedAt: '2026-01-21T22:00:00.000Z'
+	},
+	{
 		name: '"Next week" (status update)',
 		announcedAt: '2025-05-30T12:42:00.000Z',
 		announcementReferences: [
