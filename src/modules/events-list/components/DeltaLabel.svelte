@@ -12,7 +12,7 @@
 </script>
 
 {#if difference !== null}
-	<div class:delta-label={true} class:--variant-danger={difference > 24 * 60 * 60 * 1000}>
+	<div class:delta-label={true} class:--variant-danger={difference > 60 * 1000}>
 		<span>
 			{#if difference === 0}
 				On time

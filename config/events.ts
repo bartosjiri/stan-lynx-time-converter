@@ -23,7 +23,14 @@ export const EVENTS: EventT[] = [
 				url: 'https://x.com/stanlarroque/status/1989377014168526874'
 			}
 		],
-		promisedAt: '2026-01-21T22:00:00.000Z'
+		promisedAt: '2026-01-21T22:00:00.000Z',
+		deliveredAt: '2026-01-22T02:30:00.000Z',
+		deliveryReferences: [
+			{
+				name: 'Youtube stream',
+				url: 'https://www.youtube.com/watch?v=7qOUOuqkR3Y'
+			}
+		]
 	},
 	{
 		name: '"Next week" (status update)',
