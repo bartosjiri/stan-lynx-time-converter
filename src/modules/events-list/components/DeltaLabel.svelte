@@ -24,7 +24,7 @@
 {/if}
 
 <style lang="scss">
-	.delta-label {
+	:global(.delta-label) {
 		--color-foreground: var(--color-success-01);
 		--color-background: var(--color-success-02);
 

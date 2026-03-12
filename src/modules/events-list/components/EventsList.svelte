@@ -7,6 +7,7 @@
 	import { Wrapper, LINK_GITHUB_REPO } from '$lib/layout';
 	import { Button } from '$lib/primitives';
 	import EventItem from './EventItem.svelte';
+	import LiquidationEventItem from './LiquidationEventItem.svelte';
 
 	import { events } from '$modules/time-converter';
 
@@ -23,6 +24,8 @@
 				<h2>Events</h2>
 			</div>
 			<div class:list={true}>
+				<!-- @NOTE: Special liquidation item -->
+				<LiquidationEventItem />
 				{#each $events.slice(0, INITIAL_COUNT) as event}
 					<EventItem {event} />
 				{/each}
