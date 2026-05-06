@@ -25,9 +25,12 @@
 			</div>
 			<div class:list={true}>
 				<!-- @NOTE: Special liquidation item -->
-				<LiquidationEventItem />
 				{#each $events.slice(0, INITIAL_COUNT) as event}
-					<EventItem {event} />
+					{#if event.eventType === 'liquidation'}
+						<LiquidationEventItem {event} />
+					{:else}
+						<EventItem {event} />
+					{/if}
 				{/each}
 				{#if isExpanded}
 					<div class:list={true} in:fly={{ duration: 250, y: '-2.4rem' }}>

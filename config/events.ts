@@ -3,17 +3,29 @@ import type { EventT } from '../src/modules/time-converter';
 // @NOTE: Read the README for more information on how to use this file
 
 export const EVENTS: EventT[] = [
-	// {
-	// 	name: '"This summer" (Lynx R2 release)',
-	// 	announcedAt: '2026-01-21T19:15:00.000Z',
-	// 	announcementReferences: [
-	// 		{
-	// 			name: 'Tweet',
-	// 			url: 'https://x.com/stanlarroque/status/2014054334799938027'
-	// 		}
-	// 	],
-	// 	promisedAt: '2026-08-31T21:59:59.999Z'
-	// },
+	{
+		name: '"Next week"',
+		announcedAt: '2026-05-05T17:58:00.000Z',
+		announcementReferences: [
+			{
+				name: 'Tweet',
+				url: 'https://x.com/stanlarroque/status/2051723229115334879'
+			}
+		],
+		promisedAt: '2026-05-17T21:59:59.999Z'
+	},
+	{
+		name: '"This summer" (Lynx R2 release)',
+		eventType: 'liquidation',
+		announcedAt: '2026-01-21T19:15:00.000Z',
+		announcementReferences: [
+			{
+				name: 'Tweet',
+				url: 'https://x.com/stanlarroque/status/2014054334799938027'
+			}
+		],
+		promisedAt: '2026-08-31T21:59:59.999Z'
+	},
 	{
 		name: 'Lynx R2 reveal livestream',
 		announcedAt: '2025-11-14T16:56:00.000Z',

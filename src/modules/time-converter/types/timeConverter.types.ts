@@ -1,5 +1,6 @@
 export type EventT = {
 	name: string;
+	eventType?: null | 'liquidation';
 	description?: string;
 	announcedAt: string;
 	announcementReferences?: ReferenceT[] | null;

@@ -8,26 +8,16 @@
 
 	import type { EventT } from '$modules/time-converter';
 
-	const LIQUIDATION_EVENT: EventT = {
-		name: '"This summer" (Lynx R2 release)',
-		announcedAt: '2026-01-21T19:15:00.000Z',
-		announcementReferences: [
-			{
-				name: 'Tweet',
-				url: 'https://x.com/stanlarroque/status/2014054334799938027'
-			}
-		],
-		promisedAt: '2026-08-31T21:59:59.999Z'
-	};
+	export let event: EventT;
 </script>
 
 <div class:event-item={true}>
 	<div class:intro={true}>
 		<div class:name={true}>
-			<span>{LIQUIDATION_EVENT.name}</span>
+			<span>{event.name}</span>
 		</div>
 		<div class:datetime={true}>
-			<span>{dayjs(LIQUIDATION_EVENT.announcedAt).format(DATETIME_FORMAT)}</span>
+			<span>{dayjs(event.announcedAt).format(DATETIME_FORMAT)}</span>
 		</div>
 	</div>
 	<div class:details={true}>
@@ -36,10 +26,10 @@
 				<Avatar src="/assets/images/stan-announcement.png" />
 			</div>
 			<div class:timing={true}>
-				<span>{dayjs(LIQUIDATION_EVENT.promisedAt).format(DATETIME_FORMAT)}</span>
+				<span>{dayjs(event.promisedAt).format(DATETIME_FORMAT)}</span>
 			</div>
 			<div class:references={true}>
-				{#each LIQUIDATION_EVENT.announcementReferences || [] as { name, url }}
+				{#each event.announcementReferences || [] as { name, url }}
 					<Button href={url} target="_blank" size="small" variant="subtle" icon={Link}>
 						{name}
 					</Button>
