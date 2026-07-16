@@ -12,7 +12,14 @@ export const EVENTS: EventT[] = [
 				url: 'https://x.com/stanlarroque/status/2051723229115334879'
 			}
 		],
-		promisedAt: '2026-05-17T21:59:59.999Z'
+		promisedAt: '2026-05-17T21:59:59.999Z',
+		deliveredAt: '2026-07-16T15:01:00.00Z',
+		deliveryReferences: [
+			{
+				name: 'Discord message',
+				url: 'https://discord.com/channels/902609415281201253/902609416048742512/1527329460527956049'
+			}
+		]
 	},
 	{
 		name: '"This summer" (Lynx R2 release)',
